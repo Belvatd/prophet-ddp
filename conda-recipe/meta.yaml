@@ -1,0 +1,30 @@
+package:
+  name: prophet
+  version: "1.1.7"  # Sesuaikan versi Prophet
+
+source:
+  git_url: https://github.com/Belvatd/prophet
+
+build:
+  number: 1
+  script: python setup.py install  # Menjalankan setup.py untuk instalasi
+
+requirements:
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - numpy
+    - pystan
+    - pandas
+
+test:
+  imports:
+    - prophet
+
+about:
+  home: https://github.com/facebook/prophet
+  license: MIT
+  license_file: LICENSE
+  summary: "Prophet is a forecasting tool designed for making accurate forecasts with minimal effort."
