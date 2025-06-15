@@ -3,7 +3,7 @@ package:
   version: "1.1.7"  # Sesuaikan versi Prophet
 
 source:
-  git_url: https://github.com/Belvatd/prophet
+  git_url: https://github.com/Belvatd/prophet-ddp
 
 build:
   number: 1
@@ -16,8 +16,8 @@ requirements:
   run:
     - python
     - numpy
-    - pystan
     - pandas
+    - cmdstanpy
 
 test:
   imports:
